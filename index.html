@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Easy Skill - Learn. Grow. Succeed</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+body {margin:0; padding:0; font-family:'Poppins', sans-serif; background:#f4f6f8; color:#333;}
+header {background:#1e3a8a; color:white; display:flex; justify-content:space-between; align-items:center; padding:15px 50px;}
+header img {height:50px;}
+header nav a {color:white; text-decoration:none; margin-left:20px; font-weight:600;}
+header nav a:hover{text-decoration:underline;}
+.hero {background:#3b82f6; color:white; text-align:center; padding:80px 20px; position:relative;}
+.hero h2 {font-size:48px; margin-bottom:20px;}
+.hero p {font-size:20px; margin-bottom:30px;}
+.hero button {padding:15px 30px; font-size:18px; margin:5px; border:none; cursor:pointer; border-radius:5px; font-weight:600;}
+.hero button.start {background:#f97316; color:white;}
+.hero button.demo {background:white; color:#3b82f6;}
+.courses {padding:50px 20px; text-align:center;}
+.courses h2 {color:#1e3a8a; margin-bottom:50px; font-size:36px;}
+.course-grid {display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:30px;}
+.course-card {background:white; padding:20px; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.1); transition: transform 0.3s;}
+.course-card:hover {transform: translateY(-10px);}
+.course-card img {width:100%; border-radius:10px;}
+.course-card h3 {margin-top:15px; color:#1e3a8a;}
+.course-card p {font-size:16px; margin:10px 0;}
+.course-card span {font-weight:700; font-size:18px; color:#f97316;}
+.course-card button {margin-top:10px; padding:12px 20px; font-size:16px; background:#3b82f6; color:white; border:none; border-radius:6px; cursor:pointer; font-weight:600;}
+.why, .testimonials, .founder, .adsense {padding:50px 20px; text-align:center;}
+.why h2, .testimonials h2, .founder h2 {color:#1e3a8a; margin-bottom:30px;}
+.why ul {list-style:none; padding:0;}
+.why li {font-size:18px; margin:15px 0;}
+.testimonial-card, .founder-card {background:white; padding:25px; margin:20px auto; max-width:600px; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.1);}
+.testimonial-card p, .founder-card p {font-size:16px;}
+.founder img, .testimonial-card img {border-radius:50%; width:100px; height:100px; margin-bottom:15px;}
+footer {background:#1e3a8a; color:white; text-align:center; padding:25px;}
+footer a {color:white; text-decoration:none; margin:0 10px;}
+.adsense {background:#f0f0f0; margin:50px auto; max-width:728px; height:90px; display:flex; align-items:center; justify-content:center; font-size:16px; color:#888; border:2px dashed #ccc;}
+.contact-form input, .contact-form textarea {padding:12px; width:300px; margin-bottom:15px; border-radius:6px; border:1px solid #ccc;}
+.contact-form button {padding:12px 25px; background:#3b82f6; color:white; border:none; border-radius:6px; cursor:pointer; font-weight:600;}
+@media(max-width:768px){header {flex-direction:column;} nav {margin-top:10px;}}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+<img src="https://via.placeholder.com/150x50?text=Easy+Skill+Logo" alt="Easy Skill Logo">
+<nav>
+<a href="#courses">Courses</a>
+<a href="#why">Why Us</a>
+<a href="#founder">Founder</a>
+<a href="#testimonials">Testimonials</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+<h2>Learn. Grow. Succeed with Easy Skill</h2>
+<p>Master Web Development, Graphic Design, Shopify, eBay & Digital Marketing — All in One Place</p>
+<button class="start">Start Learning Today</button>
+<button class="demo">Watch Demo</button>
+</section>
+
+<!-- Courses Section -->
+<section class="courses" id="courses">
+<h2>Explore Our Courses</h2>
+<div class="course-grid">
+<div class="course-card">
+<img src="https://via.placeholder.com/300x150.png?text=Web+Development" alt="Web Development">
+<h3>Web Development</h3>
+<p>Learn HTML, CSS, JS & build real websites</p>
+<span>PKR 25,000</span>
+<button>Enroll Now</button>
+</div>
+<div class="course-card">
+<img src="https://via.placeholder.com/300x150.png?text=Graphic+Design" alt="Graphic Design">
+<h3>Graphic Design</h3>
+<p>Canva & Photoshop from scratch</p>
+<span>PKR 15,000</span>
+<button>Enroll Now</button>
+</div>
+<div class="course-card">
+<img src="https://via.placeholder.com/300x150.png?text=Shopify+Setup" alt="Shopify Setup">
+<h3>Shopify Setup</h3>
+<p>Launch your online store in 1 month</p>
+<span>PKR 25,000</span>
+<button>Enroll Now</button>
+</div>
+<div class="course-card">
+<img src="https://via.placeholder.com/300x150.png?text=eBay+Selling" alt="eBay Selling">
+<h3>eBay Selling</h3>
+<p>Sell online & earn globally</p>
+<span>PKR 25,000</span>
+<button>Enroll Now</button>
+</div>
+<div class="course-card">
+<img src="https://via.placeholder.com/300x150.png?text=Digital+Marketing" alt="Digital Marketing">
+<h3>Digital Marketing</h3>
+<p>Social media, Ads & SEO basics</p>
+<span>PKR 25,000</span>
+<button>Enroll Now</button>
+</div>
+</div>
+</section>
+
+<!-- AdSense Space -->
+<div class="adsense">
+Your AdSense Ad Here
+</div>
+
+<!-- Why Easy Skill -->
+<section class="why" id="why">
+<h2>Why Choose Easy Skill?</h2>
+<ul>
+<li>Learn at your own pace</li>
+<li>Weekly live sessions + recorded tutorials</li>
+<li>One-time payment for lifetime access</li>
+<li>Certificate included on completion</li>
+<li>Professional instructor guidance</li>
+</ul>
+</section>
+
+<!-- Founder Section -->
+<section class="founder" id="founder">
+<h2>Meet Our Founder</h2>
+<div class="founder-card">
+<img src="https://via.placeholder.com/100.png?text=Founder" alt="Founder">
+<p><strong>Asra Asif</strong><br>Founder & Head Instructor at Easy Skill. Dedicated to helping students learn high-income skills online.</p>
+</div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials" id="testimonials">
+<h2>What Our Students Say</h2>
+<div class="testimonial-card">
+<img src="https://via.placeholder.com/100.png?text=Student1" alt="Student1">
+<p>“Easy Skill helped me start my Shopify store in just 2 weeks!” – Ali</p>
+</div>
+<div class="testimonial-card">
+<img src="https://via.placeholder.com/100.png?text=Student2" alt="Student2">
+<p>“I learned Graphic Design from scratch and now I freelance online.” – Sara</p>
+</div>
+<div class="testimonial-card">
+<img src="https://via.placeholder.com/100.png?text=Student3" alt="Student3">
+<p>“Web Development course was beginner friendly and practical.” – Ahmed</p>
+</div>
+</section>
+
+<!-- Contact Section -->
+<section class="courses contact" id="contact">
+<h2>Contact Us</h2>
+<p>Email: <a href="mailto:easyskill.com@gmail.com">easyskill.com@gmail.com</a> | WhatsApp: <a href="https://wa.me/923702329369" target="_blank">0370-2329369</a></p>
+<p>Fill the contact form below:</p>
+<form class="contact-form">
+<input type="text" placeholder="Your Name" required><br>
+<input type="email" placeholder="Your Email" required><br>
+<textarea placeholder="Your Message" required></textarea><br>
+<button type="submit">Send Message</button>
+</form>
+</section>
+
+<!-- Footer -->
+<footer>
+<p>&copy; 2026 Easy Skill. All Rights Reserved.</p>
+<p>
+<a href="#">Home</a> | 
+<a href="#courses">Courses</a> | 
+<a href="#why">Why Us</a> | 
+<a href="#founder">Founder</a> | 
+<a href="#testimonials">Testimonials</a> | 
+<a href="#contact">Contact</a>
+</p>
+</footer>
+
+</body>
+</html>
